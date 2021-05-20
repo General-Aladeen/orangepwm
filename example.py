@@ -12,14 +12,14 @@ pwm = OrangePwm(100, port.PA6)
 # (1 / 100) * (20 / 100) = 0.002 seconds, followed by a low state with a duration of
 # (1 / 100) * ((100 - 20) / 100) = 0.008 seconds.
 # If a LED is plugged to with GPIO pin, it will shine at 20% of its capacity.
-pwm.start(1)
+pwm.start(80)
 sleep(2)
 
 # Change duty cycle to 6%. The pulse (HIGH state) will now have a duration of
 # (1 / 100) * (6 / 100) = 0.0006 seconds, followed by a low state with a duration of
 # (1 / 100) * ((100 - 6) / 100) = 0.0094 seconds.
 # If a LED is plugged to with GPIO pin, it will shine at 6% of its capacity.
-pwm.changeDutyCycle(0.5)
+pwm.changeDutyCycle(50)
 sleep(2)
 
 # Change the frequency of the PWM pattern. The pulse (HIGH state) will now have a duration of
