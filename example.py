@@ -6,7 +6,7 @@ from orangepwm import *
 gpio.init()
 
 # Set GPIO pin PA6 as PWM output with a frequency of 100 Hz
-pwm = OrangePwm(100, port.PA12)
+pwm = OrangePwm(100, port.PA6)
 
 # Start PWM output with a duty cycle of 20%. The pulse (HIGH state) will have a duration of
 # (1 / 100) * (20 / 100) = 0.002 seconds, followed by a low state with a duration of
