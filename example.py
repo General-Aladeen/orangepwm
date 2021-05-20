@@ -8,7 +8,7 @@ from orangepwm import *
 gpio.init ()
 
 
-led = port.PA21
+led = port.PA12
 pwm = OrangePwm(100, led)
 pwm.start(20)
 
