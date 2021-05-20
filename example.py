@@ -10,7 +10,7 @@ gpio.init ()
 
 led = port.PA12
 pwm = OrangePwm(100, led)
-pwm.start(20)
+pwm.stop()
 
 
 
